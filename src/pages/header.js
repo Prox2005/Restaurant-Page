@@ -3,11 +3,12 @@ import "../../src//style.css";
 
 export default function headerContent() {
   const header = new Element("header", "header").createElement();
-  const h1 = new Element("h1", "header__restaurant-name", "Natus Restaurant").createElement();
+  const h2 = new Element("h2", "header__restaurant-name", "Natus Restaurant").createElement();
 
   const nav = new Element("nav", "nav").createElement();
   const homeButton = new Element("button", "nav__pages--home", "Home").createElement();
   homeButton.classList.add("button");
+  homeButton.classList.add("button--active");
 
   const menuButton = new Element("button", "nav__pages--menu", "Menu").createElement();
   menuButton.classList.add("button");
@@ -15,7 +16,7 @@ export default function headerContent() {
   const contactButton = new Element("button", "nav__pages--contact", "Contact").createElement();
   contactButton.classList.add("button");
 
-  header.appendChild(h1);
+  header.appendChild(h2);
   header.appendChild(nav);
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);

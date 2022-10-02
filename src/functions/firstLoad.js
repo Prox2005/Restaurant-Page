@@ -7,7 +7,7 @@ import "../style.css";
 export default function appendElements() {
   const content = document.querySelector(".content");
   const headerContent = header();
+  const homeContent = home();
   content.appendChild(headerContent);
-  const homeButton = document.querySelector(".nav__pages--home");
-  homeButton.addEventListener("click", home);
+  content.appendChild(homeContent);
 }
