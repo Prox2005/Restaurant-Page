@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.content {
+  height: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #212529;
+  height: 20%;
+  background-image: url("./assets/food.jpg");
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.header__restaurant-name {
+  font-size: 3.4rem;
+  margin: 1rem;
+  color: #eee5db;
+}
+
+.button {
+  margin: 2rem;
+  position: relative;
+  padding: 0.2rem 1.6rem;
+  border: 3px solid #aca39f;
+  background-color: #eee5db;
+}
+
+@media only screen and (max-width: 932px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+  }
+
+  .button {
+    padding: 0.2rem 0.5rem;
+  }
+  .header__restaurant-name {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .header {
+    height: 40%;
+  }
+  .nav {
+    display: flex;
+  }
+  .header {
+    justify-content: space-evenly;
+  }
+}
