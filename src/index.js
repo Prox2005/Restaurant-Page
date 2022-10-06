@@ -4,6 +4,8 @@
 
 import content from "./functions/firstLoad";
 import loadMenu from "./pages/menu";
+import loadContact from "./pages/contact";
+
 import "./style.css";
 
 content();
@@ -36,6 +38,8 @@ class Page {
       loadMenu();
     } else if (this.button.classList.contains("nav__pages--home")) {
       content();
+    } else if (this.button.classList.contains("nav__pages--contact")) {
+      loadContact();
     }
   }
 }
