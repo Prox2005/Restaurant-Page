@@ -1,4 +1,5 @@
 "use strict";
+
 import "../../src//style.css";
 
 export default function headerContent() {
